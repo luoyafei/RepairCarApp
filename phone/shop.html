@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="shop/css/shop.css">
+    </head>
+
+    <body class="" ontouchstart>
+        <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+            <div class="uh ub ub-f1 ub-pc ub-ac" data-control="HEADERBOX" id="HeaderBox">
+                <div class="ub ub-ac ub-pc" data-control="ICON" id="Icon_left">
+                    <div class="fa fa-angle-left fa-2x" data-control-icon=""></div>
+                </div>
+                <div class="uinput ub bc-border uba ub-f1 umar-r" data-control="SEARCH" id="Search_right">
+                    <div class="uinn fa fa-search sc-text"></div>
+                    <input placeholder="请输入搜索城市" type="search" class="ub-f1 ub ub-pc ub-ac" data-control-scope="Search_right">
+                </div>
+            </div>
+            <div class="" data-control="CONTENT" id="ScrollContent">
+                <div class="scrollbox">
+                    <div class="box_bounce ub ub-ver ub-pc">
+                        <div class="ub-f1"></div>
+                        <div class="bounce_status">
+                            下拉更新......
+                        </div>
+                        <div class="bounce_status">
+                            松手更新......
+                        </div>
+                        <div class="bounce_status">
+                            更新中......
+                        </div>
+                    </div>
+                    <div class="ub ub-ver t-bla">
+                        <div class="ub ub-ver c-wh">
+                            <div class="ub-img7 ub-fh uh-per1 banImg"></div>
+                            <div class="ub uinn-a7 ubb b-gra-cf umar-per2">
+                                <div class="uba bc-border uwh-esh2 c-wh ub ub-ac ub-pc">
+                                    <div class="ub-img uwh-per2 userImg"></div>
+                                </div>
+                                <div class="ub ub-ver ub-f1">
+                                    <div class="ulev-app2 uinn-esh bc-text-head">
+                                        用户名
+                                    </div>
+                                    <div class="ub">
+                                        <div class="ub ub-ver ub-ac ub-f1">
+                                            <div class="t-gra-50 ulev-app2 ufm1">
+                                                589
+                                            </div>
+                                            <div class="ulev-4 t-gar-a0 uinn-esh2">
+                                                全部宝贝
+                                            </div>
+                                        </div>
+                                        <div class="ub ub-ver ub-ac ub-f1">
+                                            <div class="t-gra-50 ulev-app2 ufm1">
+                                                0
+                                            </div>
+                                            <div class="ulev-4 t-gar-a0 uinn-esh2">
+                                                上新宝贝
+                                            </div>
+                                        </div>
+                                        <div class="ub ub-ver ub-ac ub-f1">
+                                            <div class="ub-img umw1 umh1 share"></div>
+                                            <div class="ulev-4 t-gar-a0 uinn-esh2">
+                                                分享
+                                            </div>
+                                        </div>
+                                        <div class="ub ub-ver ub-ac ub-f1">
+                                            <div class="ub-img umw1 umh1 college"></div>
+                                            <div class="ulev-4 t-gar-a0 uinn-esh2">
+                                                收藏店铺
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-wh umar-at2">
+                            <div class="ub uinn-esh3">
+                                <div class="ub-f1 ulev-1 t-bla">
+                                    热销宝贝
+                                </div>
+                                <div class=" ulev-4 t-gar-a0">
+                                    更多
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2" data-control="CUSTOMLISTVIEW">
+                            <ul data-bind="collection:$collection" id="showGoods">
+                                <li data-control-scope="CustomListView_q14Ye8" mvvm-scope="" class="ub ub-ver ub-ac">
+                                    <div class="wh100" data-control="SQUAREBOX">
+                                        <div class="bracket">
+                                        </div>
+                                        <div class="uabs ub-con vector" data-control-scope="SquareBox_fSrN8Q">
+                                            <div class="ub-img uwh-esh ub-fh" data-bind="css:{'background-image':format('url($1)',goods)}"></div> 
+                                        </div>
+                                    </div>
+                                    <div class="ub uinn-esh4 wh100" data-control="BOX">
+                                        <div data-control="TEXT" class="ub-f1 ulev-4 t-gra-ele umw-eleL ut-s" data-bind="text:synopsis"></div>
+                                        <div data-control="TEXT" class="tx-r ufm1 t-red-eleL ulev-2 ub-pe sc-text-warn Text_w" data-bind="text:price"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+        <script src="js/appcan.scrollbox.js"></script>
+        <script src="js/template.import.js"></script>
+        <script src="./assets/mvvm/shop.js"></script>
+        <script src="./js/shop.js"></script>
+    </body>
+
+</html>

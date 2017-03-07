@@ -1,0 +1,247 @@
+#Header {
+    height:4.7em;
+    left:0.00em;
+    color:rgba(255,255,255,1);
+}
+/*#Tab {
+    background-color:rgba(225,225,225,1);
+}*/
+#Tab {
+    background-color: rgba(225,225,225,1);
+    font-size: 1.2em;
+    color: rgba(120,120,120,1);
+}
+#Page_0 {
+    width:80%;
+    right:0.00em;
+    top:0.00em;
+    border-style:none;
+    background-color:rgba(42,45,49,1);
+    color:rgba(255,255,255,1);
+}
+#Page_1 {
+    left:0.00em;
+}
+#ScrollContent {
+    padding:5em 0em 0em 0em;
+}
+.wh100 {
+    width:100%;
+}
+.Text_w {
+    width:3em;
+}
+.uwh-eleL {
+    //height: 8.5625em;
+    height:100%;
+}
+.uinn-ele1 {
+    padding: 0.25em 0.25em 0 0.25em;
+}
+.uinn-ele2 {
+    padding: 0.67em 0 0.58em 0;
+}
+.uinn-ele3 {
+    padding-top: 0.625em;
+}
+.t-gra-ele {
+    color: #535353;
+}
+.t-red-eleL {
+    color: #cf0b0b;
+}
+.umw-eleL {
+    width: 9em;
+}
+
+.c-gra {
+    background-color: #e1e1e1;
+}
+.b-gra {
+    border-color: #d6d6d6;
+}
+.t-gra {
+    color: #a1a1a1;
+}
+.t-red {
+    color: #d22f2f;
+}
+.addfont {
+    font-weight: bold;
+}
+.uinnh1 {
+    padding: 0.5em 0.5em 0 0.5em;
+    margin: 0;
+}
+.reschose {
+    background-image: url('myImg/chose.png');
+}
+.resprice {
+    background-image: url('myImg/price.png');
+}
+input[type = radio] + div > div.t-gra1 {
+    color: #787878;
+}
+input[type = radio]:checked + div > div.t-gra1 {
+    border-bottom: 2px solid #1788D4;
+    color: #1788D4;
+    background-color: #F1F1F1;
+}
+.umhh1 {
+    min-height: 2.6em;
+}
+.umwh {
+    min-height: 7.6em;
+    min-width: 7.25em;
+}
+.umar-h1 {
+    margin: 1em .5em 0 .5em;
+}
+.uwh-tBtn {
+    width: 1.75em;
+    height: 1.75em;
+}
+.shop-wh {
+    min-width: 3.17125em;
+    min-height: 3.3125em;
+}
+.umwh {
+    min-width: 0.6em;
+    min-height: 1em;
+}
+.b-ad {
+    border-color: #adadad;
+}
+.ulim12 {
+    max-width: 14em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+input[type="radio"]:checked+ div > div.not-btn {
+    background-color: #f1f1f1;
+    color: #4c4c4c;
+}
+input[type="radio"]+ div > div.not-btn {
+    background-color: #828282;
+    color: #fff;
+    /*
+     background-image: -webkit-gradient(linear, left top, left bottom, from(#e3e3e3), to(#c9c9c9));
+     background-image: -webkit-linear-gradient(top, #e3e3e3 0%, #c9c9c9 100%);
+     background-image: linear-gradient(top, #e3e3e3 0%, #c9c9c9 100%);
+     */
+}
+.t-red {
+    color: red;
+}
+.t-a2 {
+    color: #a2a2a2;
+}
+.uinn-t {
+    padding: .3em 0;
+}
+.ulev-8 {
+    font-size: 0.875em;
+}
+.ulev-5 {
+    font-size: 0.5625em;
+}
+.ulev-9 {
+    font-size: 0.9375em;
+}
+.umar-l {
+    margin-left: .5em;
+}
+.tdlt {
+    text-decoration: line-through;
+}
+.uinn-em1 {
+    padding: 0.83em 0;
+}
+
+/*drawer*/
+#HeaderBox_0 {
+    width:80%;
+    height:2.69em;
+    border-top-width:00px;
+    border-right-width:00px;
+    border-bottom-width:4px;
+    border-left-width:00px;
+    border-style:solid;
+    border-color:rgba(37,40,44,1);
+    background-color:rgba(42,45,49,1);
+}
+#Title_menu {
+    width:80%;
+    height:100%;
+    border-style:none;
+    border-color:rgba(37,40,44,1);
+}
+#ScrollContent_menu {
+    padding:2.69em 0em 2.69em 0em;
+}
+#Footer_menu {
+    width:80%;
+    height:2.63em;
+    border-style:none;
+    background-color:rgba(42,45,49,0);
+}
+#Button_left {
+    border-top-width:1px;
+    border-right-width:1px;
+    border-bottom-width:1px;
+    border-left-width:1px;
+    border-style:solid;
+    border-color:rgba(35,37,41,1);
+    border-radius:3px;
+    background-color:rgba(42,45,49,0.01);
+    font-size:.8em;
+    margin:0em 0em 0em 0.63em;
+}
+#Button_right {
+    border-top-width:1px;
+    border-right-width:1px;
+    border-bottom-width:1px;
+    border-left-width:1px;
+    border-style:solid;
+    border-color:rgba(33,141,213,1);
+    border-radius:3px;
+    background-color:rgba(33,141,213,1);
+    font-size:.8em;
+    margin:0em 0.63em 0em 0em;
+}
+.c-bla-filter{
+    background-color:#2a2d31;
+}
+.b-bla-filter{
+    border-color:#141519;
+}
+.uinn-filter{
+    padding:0.5em 1.25em;
+}
+.uinn-filter2{
+    padding:0.67em 0.92em;
+}
+.uinn-filter3{
+    padding:0.67em 0.5em;
+}
+
+.c-bla-filter2{
+    background-color:#1f2125;
+}
+.c-blu1{
+    background-color:#0670b7;
+}
+.b-blu1{
+    border-color:#0060a1;
+}
+.t-gra5{
+    color:#606060;
+}
+.umar-at1{
+    margin-top:0.625em;
+}
+.uinn-a1{
+    padding:0.625em;
+}

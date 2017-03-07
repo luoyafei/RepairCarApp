@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="goodsList/css/goodsList.css">
+    </head>
+
+    <body class="" ontouchstart>
+        <div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
+            <div class="ub">
+                <div class="nav-btn" id="nav-left">
+                    <div class="fa fa-1g ub-img1 fa-angle-left fa-2x"></div>
+                </div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">T恤</h1>
+                <div class="nav-btn" id="nav-right">
+                    <div class="ub-img1 icon-menu ulev2"></div>
+                </div>
+            </div>
+            <div class="" data-control="TAB" id="Tab"></div>
+        </div>
+        <div class="bc-bg ufix" tabindex="0" data-control="PAGE" id="Page_0">
+            <div class="uh" data-control="HEADERBOX" id="HeaderBox_0">
+                <div data-control="TEXT" class="ub-f1 ub ub-pc ub-ac ulev-1" id="Title_menu">
+                    共29条结果
+                </div>
+            </div>
+            <div class="" data-control="CONTENT" id="ScrollContent_menu">
+                <div class="ub-f1 tx-l t-bla c-bla-filter">
+                    <div class="ub ub-ver uinn-a1 bc-text-head">
+                        <div class="uba b-bla-filter c-bla-filter2 umar-at1">
+                            <ul ontouchstart="appcan.touch('btn-act')" class="ub ub-ac lis">
+                                <li class="ub-f1 ut-s ulev-app2">
+                                    库存
+                                </li>
+                                <li class="fa fa-angle-right ulev2"></li>
+                            </ul>
+                        </div>
+                        <div class="uba b-bla-filter c-bla-filter2 umar-at1">
+                            <ul ontouchstart="appcan.touch('btn-act')" class="ub ub-ac lis">
+                                <li class="ub-f1 ut-s ulev-app2">
+                                    配送方
+                                </li>
+                                <li class="fa fa-angle-right ulev2"></li>
+                            </ul>
+                        </div>
+                        <div class="uba b-bla-filter c-bla-filter2 umar-at1">
+                            <ul  class="ub ub-ac lis ubb b-bla-filter">
+                                <li class="ub-f1 ut-s ulev-app2">
+                                    品牌
+                                </li>
+                                <li class="tx-r ulev-4 t-gra5 umar-r">
+                                    裂帛
+                                </li>
+                                <li class="fa fa-angle-right ulev2"></li>
+                            </ul>
+                            <ul  class="ub ub-ac lis ubb b-bla-filter">
+                                <li class="ub-f1 ut-s ulev-app2">
+                                    袖长
+                                </li>
+                                <li class="tx-r ulev-4 t-gra5 umar-r">
+                                    中长袖
+                                </li>
+                                <li class="fa fa-angle-right ulev2"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uf sc-bg ubt sc-border-tab ub ub-pc ub-ac" data-control="FOOTER" id="Footer_menu">
+                <div class="button ub ub-ac bc-text-head ub-pc bc-btn uinn1" id="Button_left">
+                    清除条件
+                </div>
+                <div class="ub ub-f1" data-control="BOX" id="Box_XpVzxH"></div>
+                <div class="button ub ub-ac bc-text-head ub-pc bc-btn uinn1" id="Button_right">
+                    确定
+                </div>
+            </div>
+        </div>
+        <div class="bc-bg us1" tabindex="0" data-control="PAGE" id="Page_1">
+            <div class="" data-control="CONTENT" id="ScrollContent">
+                <div class="scrollbox">
+                    <div class="box_bounce ub ub-ver ub-pc">
+                        <div class="ub-f1"></div>
+                        <div class="bounce_status">
+                            下拉更新......
+                        </div>
+                        <div class="bounce_status">
+                            松手更新......
+                        </div>
+                        <div class="bounce_status">
+                            更新中......
+                        </div>
+                    </div>
+                    <div class="tab_pane active" data-control="PANE" id="Pane_0">
+                        <div class="col2 umar-t" data-control="CUSTOMLISTVIEW">
+                            <ul data-bind="collection:$collection" id="showGoods">
+                                <li data-control-scope="CustomListView_q14Ye8" mvvm-scope="" class="ub ub-ver ub-ac" onclick="openDetails(event);">
+                                    <div class="wh100" data-control="SQUAREBOX">
+                                        <div class="bracket">
+                                        </div>
+                                        <div class="uabs ub-con vector" data-control-scope="SquareBox_fSrN8Q">
+                                            <div class="ub-img uwh-eleL ub-fh" data-bind="css:{'background-image':format('url($1)',goods)}"></div> 
+                                        </div>
+                                    </div>
+                                    <div class="ub uinn-ele2 wh100" data-control="BOX">
+                                        <div data-control="TEXT" class="ub-f1 ulev-4 t-gra-ele ub-f1 ut-s" data-bind="text:synopsis"></div>
+                                        <div data-control="TEXT" class="tx-r ufm1 t-red-eleL ulev-2 Text_w" data-bind="text:price"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab_pane" data-control="PANE" id="Pane_1">
+                    </div>
+                    <div class="tab_pane" data-control="PANE" id="Pane_2">
+                        <div class="umar-a" id="goodsList" data-bind="collection:$collection" mvvm-scope>
+                            <div ontouchstart="appcan.touch()" onclick="openDetails(event);" class="ub ub-ac ub-pc ub-pj uinn ubb b-gra4">
+                                  <div class="ub-img shop-wh" data-bind="css:{'background-image':format('url($1)',goods)}"></div>
+                                  <div class="uinn ub-f1">
+                                      <div class="ulim12 ulev-8" data-bind="text:synopsis"></div>
+                                      <div class="ub ub-f1 uinn-t ub-ae umar-t">
+                                          <div class="t-red ulev-9" data-bind="text:price"></div>
+                                      </div>
+                                  </div>
+                                  <div class="arrow ub-img umwh"></div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="tab_pane" data-control="PANE" id="Pane_3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+        <script src="js/appcan.scrollbox.js"></script>
+        <script src="js/template.import.js"></script>
+        <script src="js/appcan.tab.js"></script>
+        <script src="./assets/mvvm/goodsList.js"></script>
+        <script src="./js/goodsList.js"></script>
+    </body>
+
+</html>

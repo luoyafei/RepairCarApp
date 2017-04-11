@@ -50,15 +50,14 @@
         //sortList();
         
         appcan.ajax({
-            url : 'http://localhost:8080/LearnSpringMVC/getInfo',
-            type : 'GET',
+            url : 'http://localhost:8080/RepairCarApp/order/getOrders',
+            type : 'POST',
             data : {},
             offline : true,
             success : function(data) {
                 var jsonObj = JSON.parse(data);
                 var dataObj =  new ReturnObj(jsonObj.success, jsonObj.reason, jsonObj.maxCount, jsonObj.allOrders); 
                 sortList(jsonObj.allOrders);
-                //alert(JSON.stringify(dataObj));
             },
             error : function(e) {
                 alert(e);

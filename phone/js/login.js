@@ -28,35 +28,57 @@
             appcan.window.openToast('密码不能为空', '2000');
             return;
         } else {
-            $("form").submit();
+            appcan.ajax({
+                url : 'http://localhost:8080/RepairCarApp/admin/adminLogin',
+                type : 'POST',
+                data : {
+                    name : $("#uid").val().trim(),
+                    password : $("#upwd").val()
+                },
+                offline : true,
+                success : function(data) {
+                    var obj = JSON.parse(data);
+                    if(obj.success) {
+                        appcan.window.openToast({
+                            msg:'登陆成功！',
+                            duration:'2000',
+                            type:'0'
+                        });
+                        appcan.openWinWithUrl('index', 'index.html');
+                        return;
+                    } else {
+                        appcan.window.openToast({
+                            msg : obj.reason,
+                            duration: '2000',
+                            type:'0'
+                        });
+                        return;
+                    }
+                },
+                error : function(e) {
+                    alert(e);
+                }
+            });
         }
 
     }
-    $("form").on('submit', function() {
-        if($("#uid").val().trim() == "luo" && $("#upwd").val() == "luo") {
-            appcan.openWinWithUrl('index', 'index.html');
-            return;
-        } else {
-            appcan.window.openToast({
-                msg:'无效账号或错误密码!',
-                duration:'2000',
-                type:'0'
-            });
-            return;
+    
+    /**
+     * 构造返回值对象
+ * @param {Object} success
+ * @param {Object} reason
+ * @param {Object} maxCount
+ * @param {Object} allOrders
+     */
+    var ReturnObj = function(success, reason) {
+        this.success = success;
+        this.reason = reason;
+        ReturnObj.prototype.setSuccess = function(success) {
+            this.success = success;
         }
-        /*
-        appcan.request.postForm($("form"), function() {
-                    appcan.window.alert({
-                        title : "鎻愰啋",
-                        content : "鎮ㄥ凡缁忔彁浜や簡琛ㄥ崟:)",
-                        buttons : '纭畾',
-                        callback : function(err, data, dataType, optId) {
-                            console.log(err, data, dataType, optId);
-                        }
-                    });
-                }, function(err) {
-                });*/
-        
-       // return false;
-    });
+        ReturnObj.prototype.setReason = function(reason) {
+            this.reason = reason;
+        }
+    }
+    
 })($); 

@@ -44,6 +44,7 @@
                             duration:'2000',
                             type:'0'
                         });
+                        appcan.locStorage.setVal("login", true);
                         appcan.openWinWithUrl('index', 'index.html');
                         return;
                     } else {

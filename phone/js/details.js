@@ -37,9 +37,9 @@
             index : 0
         });
         slider.set([{
-            img : "details/css/myImg/detialsImg.png"
+            img : "details/css/myImg/details.jpg"
         }, {
-            img : "details/css/myImg/detialsImg.png"
+            img : "details/css/myImg/details.jpg"
         }])
         slider.on("clickItem", function(index, data) {
             console.log(index, data);

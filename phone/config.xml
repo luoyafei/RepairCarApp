@@ -12,9 +12,9 @@
     <obfuscation>true</obfuscation>
     <bgcolor>#fefefe</bgcolor>
     <orientation>15</orientation>
-    <error/>
+    <error src=""/>
     <removeloading/>
-    <debug/>
+    <debug>true</debug>
     <partobfuscation/>
     <webapp>false</webapp>
 </widget>
